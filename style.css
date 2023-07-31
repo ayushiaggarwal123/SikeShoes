@@ -1,0 +1,435 @@
+body{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+button a{
+    text-decoration: none;
+}
+ .fa-star{
+    color: gold;
+}
+
+
+/* -------------------------------navbar-------------------------------------*/
+nav{
+    box-shadow: 0 0 10px 0 #22A699; 
+    position: fixed; 
+}
+#header{
+     padding: 0 2rem 0 2rem;
+   
+}
+.icons i{
+    margin-left: 0.5rem;
+}
+.icons i:hover{
+    color: #00a651;
+}
+.logo h1{
+    color: #00a651;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.logo span{
+    color: #004aad;
+    text-decoration: underline;
+}
+@media(max-width: 993px){
+    #navbarnav  .navbar-toggler-icon .navbar-toggler{
+        justify-content: left;
+        align-items: start;
+    }
+    .logo{
+       justify-content: center;
+    
+    }
+}
+
+
+/*---------------banner----------------------------*/
+
+
+#Home{
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/bg1.png);
+    background-size: cover;
+    
+}
+.content{
+    display: inline-flex;
+    padding: 0 3rem;
+}
+.text{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    align-content: start;
+}
+.text h1{
+    font-weight: 700;
+    font-family: serif;
+    font-size: 7rem;
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text h1 span{
+    font-family: sans-serif;
+    font-size: 6rem;
+}
+.text p{
+    font-weight: 200;
+}
+.text button{
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    margin-top: 2%;
+    width: 8rem;
+}
+.text button a{
+    text-align: left;
+    color: white;
+}
+.text button:hover i{
+    transform: translateX(6px);
+}
+.shoe-image{
+    display: flex;
+    justify-content: center;
+    height: 40rem;
+}
+section{
+    box-shadow: 0 0 10px 0 #22A699; 
+}
+
+/*-----------------products-----------------*/
+.product h1{
+    font-size: 5rem;
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 1rem 0;
+}
+.product .productList{
+    margin: 2% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap: 1rem ;
+}
+.card {
+    height: 15rem;
+    width: 18rem;
+    text-align: center;
+    box-shadow: 0 0 8px #22A699;
+    padding: 7%;
+}
+.card .small_card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+.card:hover .small_card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+.card .small_card i{
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+.card .small_card i:hover{
+    color: #00a651;
+}
+.card .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .card-image-top{
+    display: flex;
+    height: 9rem;
+    width: 9rem;
+}
+ .card .card-text {
+    padding: 3%;
+    margin-top: 1rem;
+}
+.card .card-text a{
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    margin: 2% 0 6%;
+    color: white;
+}
+.product {
+    padding-bottom: 1rem; 
+}
+
+/*---------about-----------------*/
+
+.about h1{
+    font-size: 5rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem 0 1rem;
+}
+.about .aboutDiv{
+    display: inline-flex;
+
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+}
+.aboutDiv  .aboutImage img{
+  
+    height: 5rem;
+    width: 8rem;
+    cursor: pointer;
+    background: linear-gradient(#00a651, #004aad );
+    display: flex;
+    border-radius: 0.5rem;
+    padding: 2% 2%;
+    box-shadow: 0 0 6px rgba(0,0,0,0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+    margin: 0 0 0.5rem 1rem;
+}
+.aboutDiv .aboutImage img:hover{
+    opacity: 1;
+}
+.aboutDiv .bigImage{
+    padding: 1rem;
+   
+}
+.aboutDiv .bigImage img{
+    height: 25rem;
+    border: solid thick #00a651;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 5px 5px #004aad;
+
+}
+.aboutDiv .aboutText{
+    height: 25rem;
+    border: solid thick #00a651;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 3px 3px 3px 3px #004aad;
+    text-align: center;
+}
+.about .button{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.about .button .btn{
+    border: solid #004aad;
+    height: 3rem;
+    width: 9rem;
+    color: #004aad;
+}
+.about .button .btn:hover{
+    background: linear-gradient(#00a651, #004aad );
+    color: white;
+}
+
+/*------------reviews-------*/
+.review h1{
+    font-size: 5rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem 0 1rem;
+}
+
+.review .carousel{
+    background: linear-gradient(#00a651, #004aad );
+    text-align: center;
+    padding: 4rem;
+}
+.review .carousel .carousel-inner .carousel-item p{
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+}
+.review .carousel .carousel-inner .carousel-item img{
+   height: 4rem;
+   width: 4rem;
+   border-radius: 100%;
+}
+.review .carousel .carousel-inner .carousel-item h3{
+    color: white;
+ } 
+
+ /* -------------services------------ */
+
+ .service h1{
+    font-size: 5rem;
+    text-align: center;
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1rem 0 1rem;
+ }
+ .service .bigbox{
+    padding: 5rem;
+    text-align: center;
+    display: inline-flex;
+ }
+ .service  .box{
+    padding: 2rem;
+ 
+
+ }
+ .service  .bigbox .box .fa-truck-fast ,.fa-rotate-left ,.fa-headset{
+   font-size: 3rem;
+    color: gold;
+    margin-bottom: 1rem;
+ }
+ .service .bigbox .box h3{
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ .service{
+    box-shadow:  #22A699 ;
+ }
+
+ /* ----------login------------ */
+
+ .login{
+    height: 100vh;
+    background-image: url(image/bg22.png);
+  
+    background-size: cover;
+    display: flex;
+    
+    
+ }
+ .login .shoeImage2{
+    display:flex;
+    justify-content: start;
+    height: 40rem;
+   
+ }
+ .login .form{
+    height: 40rem;
+    padding: 10rem;
+    
+}
+ .login .form h2{
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem;
+ }
+form .username,.password{
+    border:solid #00a651;
+    border-radius: 0.3rem;
+}
+ form .username input{
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    border: solid  #00a651;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background: none;
+    border: none;
+    outline: none;
+
+ }
+ form .password input{
+    width: 20rem;
+    margin-bottom: 0.5rem;
+    border: solid  #00a651;
+    height: 2rem;
+    border-radius: 0.3rem;
+    background: none;
+    border: none;
+    outline: none;
+ }
+
+ form p{
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: white;
+ }
+ form .username,.password  i{
+   color: #004aad;
+ }
+ form  .forget{
+    text-align: right;
+    margin-bottom: 0.5rem;
+ }
+ form button{
+    width: 100%;
+    background: -webkit-linear-gradient( right,#00a651, #004aad);
+    color: white;
+    font-weight: 700;
+    height: 2rem;
+    border: none;
+    border-radius: 0.3rem;
+ }
+ form .socialMedia {
+   text-align: center;
+ }
+form .socialMedia a img{
+   height: 2rem;
+   width: 2rem;
+   margin-top: 1rem;
+}
+
+
+/* -----------footer-------------- */
+
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem 3rem 1rem 3rem;
+}
+.footer .info{
+    display: flex;
+    flex-direction: column;
+    column-gap: 1rem;
+}
+.footer .info h1{
+    background: -webkit-linear-gradient(#00a651, #004aad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+.footer .info a{
+    text-decoration: none;
+    color: black;
+   
+}
+.footer .info a i:hover{
+    color: #00a651;
+}
+.footer .info .social_link a{
+    padding: 0.5rem;
+    border-radius: 100%;
+}
+.footer .info .social_link a i:hover{
+    color: whitesmoke;
+}
+.footer .info .social_link  a:hover{
+  background: -webkit-linear-gradient(#00a651, #004aad);
+}
